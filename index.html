@@ -1,0 +1,56 @@
+<!doctype html>
+<!--
+  Draft of the public privacy-and-terms page Epic requires (SPEC.md section 9).
+  Copy this file into a separate public repo named throughline-privacy and turn
+  on GitHub Pages. It holds no data and must never link to the app.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Throughline: Privacy Policy and Terms</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #222; background: #fff; }
+    h1 { font-size: 1.6rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>Throughline</h1>
+  <p>Effective date: November 18, 2026</p>
+
+  <h2 id="privacy">Privacy Policy</h2>
+
+  <p><strong>Who runs it.</strong> Throughline is operated by one individual for personal, family use. It is not a company product and is not offered to the public.</p>
+
+  <p><strong>What it reads.</strong> With the patient's approval in MyChart, Throughline reads these records, read-only: patient demographics, encounters, problems (conditions), medication orders, allergies, immunizations, procedures, lab results, diagnostic reports, and clinical notes with their attached content. It cannot change, add to, or delete anything in the medical record.</p>
+
+  <p><strong>Who approves.</strong> Access starts only when the patient (or their authorized proxy) approves it in MyChart, for the length of time they choose there.</p>
+
+  <p><strong>Where data is kept.</strong> Copies of the records are stored encrypted on a personal computer in the operator's home. The computer uses full-disk encryption, and the database has its own encryption, with its key in the computer's system keychain. There are no backups and no cloud copies. The app is reachable only from the operator's own devices over a private, encrypted network; it has no public address.</p>
+
+  <p><strong>Third parties.</strong></p>
+  <ul>
+    <li><strong>Epic</strong> and the patient's health system: the source of the records.</li>
+    <li><strong>Anthropic</strong> (Claude API): clinical notes are sent to Anthropic to produce plain-English summaries. This uses Anthropic's commercial API terms, under which inputs are not used to train models. Anthropic deletes API inputs and outputs within 30 days. Content its automated safety systems flag can be kept for up to 2 years for safety review.</li>
+    <li><strong>Tailscale</strong>: provides the encrypted private network between the operator's own devices. It carries traffic but cannot read it.</li>
+  </ul>
+  <p>No other party receives the data.</p>
+
+  <p><strong>What Throughline never does.</strong> It does not sell data, share it for marketing, show advertising, use analytics or tracking, or set cookies on this page.</p>
+
+  <p><strong>How long data is kept.</strong> Until the patient revokes access, or the operator stops the service. Summaries can be regenerated, so nothing kept here is the only copy of anything.</p>
+
+  <p><strong>How to revoke.</strong> In MyChart, open the linked apps (or "Manage My Linked Apps and Devices") settings and remove Throughline. Access ends immediately. On request, the operator deletes all local copies.</p>
+
+  <p><strong>Contact.</strong> johnsummon344@gmail.com</p>
+
+  <h2 id="terms">Terms of Use</h2>
+  <ul>
+    <li>Throughline is for personal, non-commercial family use only.</li>
+    <li>It is not medical advice. Summaries restate what the records say; they don't interpret them. Always rely on the patient's clinicians for medical decisions.</li>
+    <li>It is provided as is, with no warranty of any kind, including accuracy or availability.</li>
+    <li>The operator may change or stop the service at any time.</li>
+  </ul>
+</body>
+</html>
